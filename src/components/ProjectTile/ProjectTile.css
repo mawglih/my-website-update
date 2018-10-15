@@ -1,0 +1,14 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+.tile h2, h3 {
+  text-align: center;
+}
+
+.links {
+  align-self: center;
+}

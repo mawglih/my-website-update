@@ -1,0 +1,31 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-family: 'Rock Salt', cursive;
+  background: #5a3166;
+  color: gray;
+}
+.left{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.links {
+  align-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link {
+  padding: 0 30px;
+  
+}
+.link > a {
+  text-decoration: none;
+  color: gray;
+}
+.link > a:hover {
+  color: white; 
+}
