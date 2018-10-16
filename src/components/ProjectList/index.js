@@ -10,7 +10,7 @@ export const Projects = () => (
         key={index}
         title={item.title}
         program_type={item.program_type}
-        image={item.image}
+        image_link={item.image_link}
         web_link={item.web_link}
         git_link={item.git_link}
       />

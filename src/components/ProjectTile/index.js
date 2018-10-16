@@ -4,7 +4,7 @@ import './ProjectTile.css';
 export default ({
   title,
   program_type,
-  image,
+  image_link,
   web_link,
   git_link,
 }) => (
@@ -16,7 +16,7 @@ export default ({
       {program_type}
     </h3>
     <div className="image_tile">
-      <img src={image} alt={title} />
+      <img src={image_link} alt={title} />
     </div>
     <div className="links">
       <a href={web_link} target="_blank" rel="noopener noreferrer">Web</a>
