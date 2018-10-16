@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
 
-export default () => (
+const Hero = () => (
   <div className="hero">
     <h1>Building Websites to Meet Your Needs</h1>
     <h2>Fast, Mobile-friendly, Based on Modern Technology</h2>
@@ -15,3 +15,4 @@ export default () => (
     <button className="hero-button">Find out more</button>
   </div>
 );
+export default Hero;
