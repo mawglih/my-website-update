@@ -19,6 +19,9 @@ export const Routes = () => (
       path={PROJECTS}
       component={Projects}
     />
+    <Route
+      component={Home}
+    />
   </Switch>
 );
 

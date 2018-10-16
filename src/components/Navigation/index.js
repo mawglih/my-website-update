@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
@@ -12,8 +13,14 @@ const Links = [
 export default () => (
   <div className="navbar">
     <div className="left">
-      <div>Logo</div>
-      <div>Website Development</div>
+      <div className="logo">
+        <Link to="/">
+          <img src={Logo} alt="Logo" />
+        </Link>
+      </div>
+      <div>
+        <Link to="/">Website Development</Link>
+      </div>
     </div>
     <div className="links">
       {Links.map(item => (

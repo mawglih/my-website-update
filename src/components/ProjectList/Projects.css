@@ -1,10 +1,10 @@
 .projects {
   display: flex;
   flex-direction: row;
-  flex: 1 0 30%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   background: gray;
   color: antiquewhite;
+  padding-top: 2rem;
 }

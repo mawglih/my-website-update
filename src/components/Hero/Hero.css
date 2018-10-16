@@ -1,0 +1,36 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  position: relative;
+  background: #666031;
+  font-size: 120%;
+}
+.hero:after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: .5;
+  background-image: url(../../images/main_sm.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero h1, h2, h3, ul, button {
+  z-index: 2;
+  position: relative;
+  color: white;
+}
+.hero-button {
+  padding: 15px 40px;
+  background-color: #5a3166;
+}
+.hero-list {
+  list-style-type: none;
+}

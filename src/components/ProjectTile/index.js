@@ -15,14 +15,14 @@ export default ({
     <h3>
       {program_type}
     </h3>
-    <div>
+    <div className="image_tile">
       <img src={image} alt={title} />
     </div>
     <div className="links">
-      <a href={web_link} target="_blank">Web</a>
+      <a href={web_link} target="_blank" rel="noopener noreferrer">Web</a>
     </div>
     <div className="links">
-      <a href={git_link} target="_blank">Git</a>
+      <a href={git_link} target="_blank" rel="noopener noreferrer">Git</a>
     </div>
   </div>
 )

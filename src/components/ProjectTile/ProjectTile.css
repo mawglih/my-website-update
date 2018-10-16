@@ -1,14 +1,35 @@
 .tile {
+  flex: 0 1 30%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
   padding-left: 20px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  min-width: 30rem;
+  margin-bottom: 2rem;
 }
 .tile h2, h3 {
   text-align: center;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .links {
   align-self: center;
+}
+.image_tile> img {
+  width: 100%;
+}
+.image_tile > img:hover {
+  border:5px solid blue;
+}
+.links > a {
+  color: white;
+  padding-top: .5rem;
+}
+.links > a:hover {
+  transform: translateX(2px);
+  color: blue;
 }
