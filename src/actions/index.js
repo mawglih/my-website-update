@@ -1,6 +1,7 @@
 export const GET_WEBSITES_START = 'GET_WEBSITES_START';
 export const GET_WEBSITES_SUCCESS = 'GET_WEBSITES_SUCCESS';
 export const GET_WEBSITES_FAILURE = 'GET_WEBSITES_FAILURE';
+export const SET_TEXT_FILTER = 'SET_TEXT_FILTER';
 
 export const getWebsitesStart = () => (
   {
@@ -21,3 +22,10 @@ export const getWebsitesFailure = ({ payload }) => (
     error: payload,
   }
 );
+
+export const setTextFilter = (text) => {
+  return{
+    type: SET_TEXT_FILTER,
+    payload: text,
+  };
+};

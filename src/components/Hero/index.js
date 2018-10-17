@@ -1,4 +1,5 @@
 import React from 'react';
+import Socket from '../Socket';
 import './Hero.css';
 
 const Hero = () => (
@@ -6,6 +7,7 @@ const Hero = () => (
     <h1>Building Websites to Meet Your Needs</h1>
     <h2>Fast, Mobile-friendly, Based on Modern Technology</h2>
     <h3>From idea to hosting. We provide assistance on every stage of website development</h3>
+    <Socket />
     <ul className="hero-list">
       <li>Questionaire</li>
       <li>Mockup design</li>

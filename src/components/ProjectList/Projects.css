@@ -4,7 +4,19 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding-top: 2rem;
+}
+.projectsTop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: gray;
   color: antiquewhite;
-  padding-top: 2rem;
+}
+.titleProjects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }

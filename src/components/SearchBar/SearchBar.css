@@ -1,0 +1,13 @@
+.searchInput {
+  padding: 10px 30px;
+  width: 320px;
+  border: blue dotted 1px;
+  border-radius: 25px;
+  color: #5a3166;
+  font-weight: bold;
+  outline: none;
+}
+.searchInput::placeholder {
+  font-family: 'Rock Salt', cursive;
+  color: blue;
+}
