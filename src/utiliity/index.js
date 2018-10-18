@@ -1,11 +1,14 @@
 import openSocket from 'socket.io-client';
 
 export const displayWebsites = (websites, filter) => {
-  return websites.filter(website => {
-    const titleMatch = website.title.toLowerCase().includes(filter.toLowerCase());
-    const programMatch = website.program_type.toLowerCase().includes(filter.toLowerCase());
-    return programMatch || titleMatch;
-  });
+  if(filter) {
+    return websites.filter(website => {
+      const titleMatch = website.title.toLowerCase().includes(filter.toLowerCase());
+      const programMatch = website.program_type.toLowerCase().includes(filter.toLowerCase());
+      return programMatch || titleMatch;
+    });
+  }
+  return websites;
 };
 
 

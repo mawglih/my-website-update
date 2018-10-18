@@ -11,8 +11,9 @@ class ProjectList extends Component {
     this.props.getWebsitesStart();
   }
   render() {
-    const { links } = this.props;
-
+    const {
+      links,
+    } = this.props;
     return(
       <div className="projectsTop">
         <div className="titleProjects">
