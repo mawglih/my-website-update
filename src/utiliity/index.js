@@ -1,4 +1,5 @@
 import openSocket from 'socket.io-client';
+import axios from 'axios';
 
 export const displayWebsites = (websites, filter) => {
   if(filter) {
@@ -12,7 +13,7 @@ export const displayWebsites = (websites, filter) => {
 };
 
 
-const socket = openSocket('http://localhost:9090');
+const socket = openSocket('http://localhost:8080');
 
 export const subscribeToTimer = (cb) => {
   socket.on('timer', timestamp => cb(timestamp));
@@ -22,4 +23,12 @@ export const subscribeToTimer = (cb) => {
 export const removeSubscription = () => {
   socket.removeAllListeners('timer');
 };
+
+const URL = 'http://localhost:8080/send';
+
+export const postData = (data) => {
+  const request = axios.post(URL, data);
+  return request;
+}
+
 export default {};

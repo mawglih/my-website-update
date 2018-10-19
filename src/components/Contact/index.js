@@ -4,14 +4,15 @@ import { connect } from 'react-redux';
 import { submitFormStart } from '../../actions';
 
 class Contact extends Component {
-  submit = values => {
-    console.log(values);
-    submitFormStart(values);
-  }
+  submit = ((values, dispatch) => {
+    console.log('in submit function in Contact: ', values);
+    dispatch(submitFormStart(values));
+  });
+
   render() {
     return (
       <div>
-        <ContactForm onSubmut={this.submit}/>
+        <ContactForm onSubmit={this.submit}/>
       </div>
     );
   }

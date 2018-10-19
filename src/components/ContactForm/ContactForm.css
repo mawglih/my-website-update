@@ -4,3 +4,29 @@
   width: 30%;
   padding: 20px;
 }
+.contactField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+}
+.has-error {
+  border: 1px solid red;
+}
+.text-error {
+  color: red;
+}
+.button {
+  padding: 10px 30px;
+  color: white;
+  border: 1px white solid;
+  border-radius: 20px;
+  width: 200px;
+}
+.submitButton {
+  background-color: blue;
+}
+.cancelButton {
+  background-color: brown;
+}

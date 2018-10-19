@@ -33,7 +33,8 @@ export const setTextFilter = (text) => {
   };
 };
 
-export const submitFormStart = ({ payload }) => {
+export const submitFormStart = (payload) => {
+  console.log('action submit form paylod: ', payload);
   return{
     type: SUBMIT_FORM_TO_SERVER_START,
     payload,
