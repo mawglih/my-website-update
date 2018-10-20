@@ -19,4 +19,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex: 0 1 30%;
+}
+.headTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projectDesc{
+  border: 1px dotted antiquewhite;
+  padding: 20px;
+  margin-top: 20px;
+}
+.projectDesc h3, ul{
+  color: antiquewhite;
+}
+.projectDesc a{
+  color: white;
+}
+.projectDesc a:hover{
+  color: blue;
+  text-shadow:2px 2px antiquewhite;
+}
+.projectDesc ul{
+  list-style-type: none;
 }

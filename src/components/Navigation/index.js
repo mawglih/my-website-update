@@ -1,7 +1,6 @@
 import React from 'react';
 import Logo from '../../images/logo.png';
 import { Link } from 'react-router-dom';
-import SearchBar from '../SearchBar';
 import './Navigation.css';
 
 
@@ -23,9 +22,6 @@ export default () => (
       <div>
         <Link to="/">Website Development</Link>
       </div>
-    </div>
-    <div>
-      <SearchBar />
     </div>
     <div className="links">
       {Links.map(item => (

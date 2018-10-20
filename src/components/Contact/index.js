@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import ContactForm from '../ContactForm';
 import { connect } from 'react-redux';
+import { reset } from 'redux-form';
 import { submitFormStart } from '../../actions';
 
 class Contact extends Component {
   submit = ((values, dispatch) => {
-    console.log('in submit function in Contact: ', values);
     dispatch(submitFormStart(values));
+    dispatch(reset('contactForm'));
   });
 
   render() {

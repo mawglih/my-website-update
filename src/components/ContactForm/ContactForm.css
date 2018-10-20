@@ -1,15 +1,16 @@
 .contactForm {
   display: flex;
   flex-direction: column;
-  width: 30%;
-  padding: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
 }
 .contactField {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 .has-error {
   border: 1px solid red;
@@ -18,15 +19,10 @@
   color: red;
 }
 .button {
-  padding: 10px 30px;
-  color: white;
-  border: 1px white solid;
-  border-radius: 20px;
   width: 200px;
+  margin: 10px;
 }
-.submitButton {
-  background-color: blue;
-}
-.cancelButton {
-  background-color: brown;
+.formTitle {
+  text-align: center;
+  color: #5a3166;
 }

@@ -13,7 +13,7 @@ export const displayWebsites = (websites, filter) => {
 };
 
 
-const socket = openSocket('http://localhost:8080');
+const socket = openSocket('http://web-server.oleg-dev.com:8881');
 
 export const subscribeToTimer = (cb) => {
   socket.on('timer', timestamp => cb(timestamp));
@@ -24,7 +24,7 @@ export const removeSubscription = () => {
   socket.removeAllListeners('timer');
 };
 
-const URL = 'http://localhost:8080/send';
+const URL = 'http://web-server.oleg-dev.com:6565/send-email';
 
 export const postData = (data) => {
   const request = axios.post(URL, data);

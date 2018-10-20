@@ -7,7 +7,7 @@ import {
   GET_WEBSITES_SUCCESS,
 } from '../actions';
 
-const URL = 'http://18.234.55.16:9090/get-websitess';
+const URL = 'http://web-server.oleg-dev.com:9090/get-websitess';
 
 export default function* websitesSaga() {
   const response = yield call(axios, URL);
